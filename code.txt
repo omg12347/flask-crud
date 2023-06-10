@@ -16,3 +16,10 @@ cat /etc/os-release                    to check os
 exit                                    exit container 
 --------------------
 
+docker build -t omg987/flask-crud:v1 .
+docker image ls
+docker push -t omg987/flask-crud:v1
+
+dockerun -it --name flask -p 8090:5000 -d omg987/flask-crud:v1                 created container
+
+docker logs -f flask                     to debug the error in container named flask
