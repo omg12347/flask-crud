@@ -1,0 +1,18 @@
+docker login -u omg987
+
+docker image ls
+
+docker pull python
+
+docker container ls -a            both to check dontainer
+docker ps -a
+
+docker run -it --name web -p 8080:80 -d nginx             create container
+
+
+----bash command----
+docker exec -it web /bin/bash         going inside docker container
+cat /etc/os-release                    to check os
+exit                                    exit container 
+--------------------
+
