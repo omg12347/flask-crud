@@ -8,7 +8,8 @@ docker container ls -a            both to check dontainer
 docker ps -a
 
 docker run -it --name web -p 8080:80 -d nginx             create container
-
+docker container stop flask                               stop flask conatiner 
+docker ps                                                 check running contaioner
 
 ----bash command----
 docker exec -it web /bin/bash         going inside docker container
@@ -23,3 +24,21 @@ docker push -t omg987/flask-crud:v1
 dockerun -it --name flask -p 8090:5000 -d omg987/flask-crud:v1                 created container
 
 docker logs -f flask                     to debug the error in container named flask
+
+#####  We get images from hub.docker.com 
+
+
+################# Next day ############################
+
+####### created new docker-compose.yaml file 
+
+docker compose version 
+
+docker compose ps  
+
+docker compose up 
+
+docker compose down
+
+docker ps                                     get container id foem here
+docker rm -f (CONTAINER ID)                   delete image 
